@@ -74,10 +74,10 @@ public class Persona implements Comparable<Persona> {
 
     @Override
     public String toString() {
-        if (nombre.split(" ").length > 1) {
+        if (nombre.split(" ").length > 1) {//Separa el nombre en un array
             return nif + "\t" + nombre.split(" ")[0]
                     + '\t' + nombre.split(" ")[1] + "\t\t" + getEdad();
-        } else {
+        } else {//Si solo esta el nombre
             return nif + "\t" + nombre + "\t\t\t" + getEdad();
         }
     }
