@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 /**
  *
- * @author ProfDiurno
+ * @author Ana Rubio
  */
 public class Curso {
 
@@ -19,15 +19,27 @@ public class Curso {
         return nombre;
     }
 
+    /**
+     * Constructor que recibe el nombre del curso y crea el TreeSet en donde se guardara la lista de alumnos
+     * @param nombre Nombre del Curso
+     */
     public Curso(String nombre) {
         this.nombre = nombre;
         listaAlumnos = new TreeSet<>();
     }
 
+    /**
+     *
+     * @return Lista de alumnos
+     */
     public TreeSet<Persona> getListaAlumnos() {
         return listaAlumnos;
     }
 
+    /**
+     * Muestra una lista del curso y de los alumnos inscritos en el curso
+     * @return String con el nombre del curso y las lista de
+     */
     @Override
     public String toString() {
         String s = "--------------------" + nombre + "-----------------\n";
@@ -39,6 +51,10 @@ public class Curso {
         return s;
     }
 
+    /**
+     * Agrega un objeto Persona a listaAlumnos
+     * @param p Objeto Persona
+     */
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);
     }
