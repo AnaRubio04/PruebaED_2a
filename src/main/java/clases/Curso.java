@@ -24,6 +24,10 @@ public class Curso {
         listaAlumnos = new TreeSet<>();
     }
 
+    public TreeSet<Persona> getListaAlumnos() {
+        return listaAlumnos;
+    }
+
     @Override
     public String toString() {
         String s = "--------------------" + nombre + "-----------------\n";
