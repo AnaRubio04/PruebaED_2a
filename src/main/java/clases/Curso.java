@@ -38,7 +38,7 @@ public class Curso {
 
     /**
      * Muestra una lista del curso y de los alumnos inscritos en el curso
-     * @return String con el nombre del curso y las lista de
+     * @return String con el nombre del curso y las lista de alumnos
      */
     @Override
     public String toString() {
