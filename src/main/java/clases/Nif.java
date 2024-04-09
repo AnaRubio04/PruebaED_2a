@@ -59,6 +59,10 @@ public class Nif {
         return numero + "-" + letra;
     }
 
+    /**
+     * establece un numero nuevo que calcula automaticamente la letra correspondiente al nuevo Nif
+     * @param numero nuevo numero de nif que se le asignara
+     */
     protected void setNif(int numero) {
         this.numero = numero;
         this.letra = calcularLetra(numero);
